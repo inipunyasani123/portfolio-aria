@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({ variable: "--font-space-grotesk", subsets: 
 const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Aria — Creative Developer & Designer","description":"Portfolio template for Aria, a fictional creative developer: dark, cinematic case studies that link to six live demo sites, plus articles on motion, contrast, and small algorithms.","inLanguage":"en"};
 
 export const metadata = {
-  metadataBase: new URL("https://portfolio-aria-pearl.vercel.app"),
+  metadataBase: new URL("https://portfolio-aria.pintuweb.id"),
   title: { default: "Aria — Creative Developer & Designer", template: "%s — Aria" },
   description: "Portfolio template for Aria, a fictional creative developer: dark, cinematic case studies that link to six live demo sites, plus articles on motion, contrast, and small algorithms.",
   applicationName: "Aria",
@@ -19,11 +19,11 @@ export const metadata = {
   authors: [{ name: "Aria" }],
   creator: "Aria",
   publisher: "Aria",
-  alternates: { canonical: "https://portfolio-aria-pearl.vercel.app" },
+  alternates: { canonical: "https://portfolio-aria.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://portfolio-aria-pearl.vercel.app",
+    url: "https://portfolio-aria.pintuweb.id",
     siteName: "Aria",
     title: "Aria — Creative Developer & Designer",
     description: "Portfolio template for Aria, a fictional creative developer: dark, cinematic case studies that link to six live demo sites, plus articles on motion, contrast, and small algorithms.",

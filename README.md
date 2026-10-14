@@ -2,7 +2,7 @@
 
 Portfolio template for Aria, a fictional creative developer: dark, cinematic case studies that link to six live demo sites, plus articles on motion, contrast, and small algorithms.
 
-**Demo live:** https://portfolio-aria-pearl.vercel.app
+**Demo live:** https://portfolio-aria.pintuweb.id
 
 ![Tangkapan layar](public/og.jpg)
 
@@ -21,12 +21,12 @@ Persona fiktif Aria, creative developer. Kaca gelap (glassmorphism) dengan auror
 
 | Studi kasus | Demo live |
 | --- | --- |
-| Lumora | https://properti-lumora.vercel.app |
-| Zychrome | https://landing-zychrome.vercel.app |
-| Lumicast | https://landing-lumicast.vercel.app |
-| LuxeElectro | https://landing-luxeelectro.vercel.app |
-| c1ph3r | https://linkinbio-cipher.vercel.app |
-| Raka Wijaya | https://linkinbio-pulse.vercel.app |
+| Lumora | https://properti-lumora.pintuweb.id |
+| Zychrome | https://landing-zychrome.pintuweb.id |
+| Lumicast | https://landing-lumicast.pintuweb.id |
+| LuxeElectro | https://landing-luxeelectro.pintuweb.id |
+| c1ph3r | https://linkinbio-cipher.pintuweb.id |
+| Raka Wijaya | https://linkinbio-pulse.pintuweb.id |
 
 ## Halaman
 
