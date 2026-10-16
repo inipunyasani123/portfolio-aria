@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const p = getProject(slug);
   if (!p) return { title: 'Project not found' };
-  return pageMeta({ title: `Case study: ${p.title}`, description: caseDesc(p), path: `/work/${p.slug}`, image: `/images/work/og/${p.slug}.jpg` });
+  return pageMeta({ title: `Case study: ${p.title}`, description: caseDesc(p), path: `/work/${p.slug}`, image: `/og/work/${p.slug}.jpg` });
 }
 
 export default async function CaseStudy({ params }) {
@@ -27,7 +27,7 @@ export default async function CaseStudy({ params }) {
 
   const ld = {
     '@context': 'https://schema.org', '@type': 'CreativeWork', name: p.title, headline: `Case study: ${p.title}`, description: caseDesc(p),
-    url: `${SITE_URL}/work/${p.slug}`, image: `${SITE_URL}/images/work/og/${p.slug}.jpg`, dateCreated: p.year, inLanguage: 'en',
+    url: `${SITE_URL}/work/${p.slug}`, image: `${SITE_URL}/og/work/${p.slug}.jpg`, dateCreated: p.year, inLanguage: 'en',
     author: { '@id': `${SITE_URL}/#person` }, about: { '@type': 'WebSite', name: p.title, url: p.url },
   };
 
