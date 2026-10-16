@@ -3,8 +3,8 @@ import Reveal from './ui/Reveal';
 // Header halaman aria: dark + glow + judul gradien.
 export default function PageHeader({ kicker, title, accent, subtitle }) {
   return (
-    <section className="relative overflow-hidden px-6 pt-36 pb-16">
-      <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-72 w-[640px] -translate-x-1/2 rounded-full bg-fuchsia-600/20 blur-[120px]" />
+    <section className="relative overflow-hidden px-6 pb-10 pt-28 md:pb-16 md:pt-36">
+      <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-72 w-[640px] max-w-full -translate-x-1/2 rounded-full bg-fuchsia-600/20 blur-[120px] light:bg-fuchsia-400/10" aria-hidden="true" />
       <div className="mx-auto max-w-6xl">
         <Reveal>
           {kicker && (

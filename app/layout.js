@@ -4,37 +4,28 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import ThemeToggle from "@/components/ThemeToggle";
+import { SITE_URL, SITE_NAME, SITE_TITLE, SITE_DESC, pageMeta } from "@/lib/seo";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ variable: "--font-space-grotesk", subsets: ["latin"], weight: ["400", "500", "700"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Aria — Creative Developer & Designer","description":"Portfolio template for Aria, a fictional creative developer: dark, cinematic case studies that link to six live demo sites, plus articles on motion, contrast, and small algorithms.","inLanguage":"en"};
+const __jsonld = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebSite", "@id": `${SITE_URL}/#website`, "url": SITE_URL, "name": SITE_TITLE, "description": SITE_DESC, "inLanguage": "en", "author": { "@id": `${SITE_URL}/#person` } },
+    { "@type": "Person", "@id": `${SITE_URL}/#person`, "name": "Aria", "jobTitle": "Creative Developer & Designer", "description": "A fictional persona for this portfolio template.", "url": SITE_URL },
+  ],
+};
 
 export const metadata = {
-  metadataBase: new URL("https://portfolio-aria.pintuweb.id"),
-  title: { default: "Aria — Creative Developer & Designer", template: "%s — Aria" },
-  description: "Portfolio template for Aria, a fictional creative developer: dark, cinematic case studies that link to six live demo sites, plus articles on motion, contrast, and small algorithms.",
-  applicationName: "Aria",
+  metadataBase: new URL(SITE_URL),
+  title: { default: SITE_TITLE, template: `%s — ${SITE_NAME}` },
+  applicationName: SITE_NAME,
   keywords: ["creative developer", "portfolio", "web designer", "interaction design", "frontend developer"],
-  authors: [{ name: "Aria" }],
-  creator: "Aria",
-  publisher: "Aria",
-  alternates: { canonical: "https://portfolio-aria.pintuweb.id" },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://portfolio-aria.pintuweb.id",
-    siteName: "Aria",
-    title: "Aria — Creative Developer & Designer",
-    description: "Portfolio template for Aria, a fictional creative developer: dark, cinematic case studies that link to six live demo sites, plus articles on motion, contrast, and small algorithms.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Aria — Creative Developer & Designer" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Aria — Creative Developer & Designer",
-    description: "Portfolio template for Aria, a fictional creative developer: dark, cinematic case studies that link to six live demo sites, plus articles on motion, contrast, and small algorithms.",
-    images: ["/og.jpg"],
-  },
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  ...pageMeta({ description: SITE_DESC, path: '/' }),
   robots: {
     index: true,
     follow: true,
@@ -42,13 +33,16 @@ export const metadata = {
   },
 };
 
+export const viewport = { themeColor: "#070712" };
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
       <body className="antialiased">
+        <a href="#konten" className="skip-link">Skip to content</a>
         <ThemeProvider>
           {/* Ambient aurora background */}
-          <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+          <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
             <div className="animate-drift absolute left-[-10%] top-[-10%] h-[520px] w-[520px] rounded-full bg-indigo-700/25 blur-[140px]" />
             <div className="animate-drift-slow absolute right-[-10%] top-[20%] h-[480px] w-[480px] rounded-full bg-fuchsia-700/20 blur-[140px]" />
             <div className="animate-drift absolute bottom-[-10%] left-[30%] h-[480px] w-[480px] rounded-full bg-cyan-700/15 blur-[150px]" />

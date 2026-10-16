@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import Reveal from '@/components/ui/Reveal';
 import { profile, skills, experience, education } from '@/lib/data';
+import { pageMeta } from '@/lib/seo';
 
-export const metadata = { title: 'About' };
+export const metadata = pageMeta({ title: 'About', description: 'About Aria, a fictional creative developer: skills, tools, and ten years of moody, motion-rich websites that still pass contrast checks.', path: '/about' });
 const glass = 'rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl';
 
 export default function AboutPage() {
@@ -27,8 +28,8 @@ export default function AboutPage() {
             <div className="mt-5 space-y-4 leading-relaxed text-white/60">
               {profile.bio.map((p, i) => <p key={i}>{p}</p>)}
             </div>
-            <Link href="/contact" className="mt-7 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-fuchsia-600 px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90">
-              <Download size={16} /> Download CV
+            <Link href="/contact" className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-fuchsia-600 px-6 text-sm font-semibold text-white transition hover:opacity-90">
+              Ask for a CV <ArrowRight size={16} aria-hidden="true" />
             </Link>
           </Reveal>
         </div>

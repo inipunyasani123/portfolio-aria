@@ -21,6 +21,21 @@ h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.02em; }
 
 html { scroll-behavior: smooth; }
 
+/* Masuk halaman: hanya geser tipis (tanpa opacity) supaya LCP tidak menunggu JavaScript. */
+@keyframes page-in { from { transform: translateY(10px); } to { transform: none; } }
+.page-in { animation: page-in 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+
+/* Tombol "pause" aurora: prinsip Aria, setiap efek punya sakelar mati. */
+.motion-paused .animate-drift, .motion-paused .animate-drift-slow { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-drift, .animate-drift-slow, .page-in { animation: none; }
+}
+
+.skip-link { position: fixed; left: 16px; top: -100px; z-index: 100; border-radius: 9999px; background: #ffffff; color: #0b0b1a; padding: 10px 18px; font-weight: 600; font-size: 14px; }
+.skip-link:focus { top: 16px; }
+
 body {
   background-color: #070712;
   color: #e7e7f4;
@@ -54,14 +69,24 @@ body {
 /* ---- Light theme (base is dark glass; flip whites, gradient accents kept) ---- */
 .light { color-scheme: light; }
 .light body { background-color: #f4f4fb !important; color: #16161f !important; }
-.light .text-white { color: #16161f !important; }
-.light .text-white\/80 { color: rgba(22,22,31,0.84) !important; }
-.light .text-white\/70 { color: rgba(22,22,31,0.78) !important; }
-.light .text-white\/60 { color: rgba(22,22,31,0.74) !important; }
-.light .text-white\/50 { color: rgba(22,22,31,0.7) !important; }
-.light .text-white\/40 { color: rgba(22,22,31,0.66) !important; }
+.light .text-white:not([class*="bg-gradient"]):not(.keep-white) { color: #16161f !important; }
+.light .text-white\/80 { color: rgba(22,22,31,0.88) !important; }
+.light .text-white\/70 { color: rgba(22,22,31,0.84) !important; }
+.light .text-white\/60 { color: rgba(22,22,31,0.82) !important; }
+.light .text-white\/50 { color: rgba(22,22,31,0.8) !important; }
+.light .text-white\/40 { color: rgba(22,22,31,0.76) !important; }
 .light .bg-white\/5 { background-color: rgba(15,15,35,0.04) !important; }
 .light .bg-white\/10 { background-color: rgba(15,15,35,0.06) !important; }
 .light .border-white\/10 { border-color: rgba(15,15,35,0.10) !important; }
 .light .border-white\/15 { border-color: rgba(15,15,35,0.14) !important; }
 .light .bg-\[\#0c0c1c\]\/95 { background-color: rgba(255,255,255,0.96) !important; }
+
+/* Reveal ringan (pengganti framer-motion whileInView) + animasi buka menu ponsel. */
+.reveal { opacity: 0; transform: translateY(var(--reveal-y, 24px)); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.reveal.is-shown { opacity: 1; transform: none; }
+@keyframes menu-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.menu-in { animation: menu-in 0.2s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .menu-in { animation: none; }
+}
