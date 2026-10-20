@@ -19,7 +19,7 @@ export default function AboutPage() {
           <Reveal>
             <div className={`${glass} relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden p-2`}>
               <div className="relative h-full w-full overflow-hidden rounded-xl">
-                <Image src={profile.about} alt="" fill sizes="(max-width:768px) calc(100vw - 48px), 384px" className="object-cover" />
+                <Image src={profile.about} alt={profile.aboutAlt} fill sizes="(max-width:768px) calc(100vw - 48px), 384px" className="object-cover" />
               </div>
             </div>
           </Reveal>

@@ -34,9 +34,12 @@ Persona fiktif Aria, creative developer. Kaca gelap (glassmorphism) dengan auror
 
 ## Gambar & kredit
 
-- `public/images/work/*.webp` — tangkapan layar demo live di tabel atas (karya koleksi ini sendiri).
-- `public/images/hero.webp` — "Office Work" oleh Jens Kreuter, [StockSnap](https://stocksnap.io/photo/office-work-0SQT0QS773), lisensi CC0.
-- `public/images/about.webp` — "Office Work" oleh Vilmos Vagyoczki, [StockSnap](https://stocksnap.io/photo/office-work-A4XAPP3ZTK), lisensi CC0.
+- `public/images/work/*.webp` — mockup bingkai peramban + ponsel (tiga ponsel untuk halaman tautan dan undangan) berisi
+  tangkapan layar demo live di tabel atas, diambil 18 Okt 2026; bingkainya digambar dengan gaya situs ini.
+  `public/og/work/*.jpg` adalah versi 1200×630-nya untuk pratinjau tautan.
+- `public/images/hero.webp`, `public/images/about.webp` — ilustrasi potret persona fiktif Aria buatan sendiri
+  (gaya kaca gelap + cahaya aurora); sumber SVG-nya di `design/`. Bukan wajah orang sungguhan dan tidak memakai foto stok.
+- `public/og.jpg` — tangkapan beranda 1200×630.
 
 ## Teknologi
 

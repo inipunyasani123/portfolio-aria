@@ -5,6 +5,10 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import Reveal from '@/components/ui/Reveal';
 import MotionToggle from '@/components/MotionToggle';
 import { profile, stats, services, projects, process } from '@/lib/data';
+import loader from '@/image-loader';
+
+// Varian WebP statis untuk <img> potret (bukan next/image karena butuh <picture> art direction).
+const srcSetFor = (src, widths) => widths.map((w) => `${loader({ src, width: w })} ${w}w`).join(', ');
 
 const glass = 'rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl';
 
@@ -38,12 +42,12 @@ export default function Home() {
               <MotionToggle />
             </div>
           </div>
-          {/* Foto dekoratif hanya di layar lebar. Di ponsel <picture> memberi GIF 1px, jadi foto tidak diunduh
+          {/* Potret ilustrasi hanya di layar lebar. Di ponsel <picture> memberi GIF 1px, jadi gambar tidak diunduh
               dan judul tetap menjadi LCP; karya di bawahnya sudah membawa visual. */}
           <div className={`${glass} relative mx-auto hidden aspect-[4/5] w-full max-w-sm overflow-hidden p-2 md:block`}>
             <picture className="block h-full w-full overflow-hidden rounded-xl">
               <source media="(max-width: 767px)" srcSet="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
-              <img src={profile.avatar} alt="" width={432} height={540} fetchPriority="high" decoding="async" className="h-full w-full object-cover" />
+              <img src={loader({ src: profile.avatar, width: 828 })} srcSet={srcSetFor(profile.avatar, [640, 828, 1080])} sizes="368px" alt={profile.avatarAlt} width={1000} height={1250} fetchPriority="high" decoding="async" className="h-full w-full object-cover" />
             </picture>
           </div>
         </div>

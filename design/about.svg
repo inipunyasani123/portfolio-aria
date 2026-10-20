@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250">
+  <defs>
+  <radialGradient id="aa-bg" cx="0.5" cy="0.35" r="0.9"><stop offset="0" stop-color="#15123a"/><stop offset="1" stop-color="#070712"/></radialGradient>
+  <linearGradient id="aa-skin" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b98a8f"/><stop offset="0.35" stop-color="#9a6a5a"/><stop offset="0.75" stop-color="#7a5040"/><stop offset="1" stop-color="#5f4a5e"/></linearGradient>
+  <linearGradient id="aa-neck" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7d5a66"/><stop offset="0.5" stop-color="#5e3d33"/><stop offset="1" stop-color="#3f3550"/></linearGradient>
+  <linearGradient id="aa-hair" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1d3a"/><stop offset="0.5" stop-color="#120c18"/><stop offset="1" stop-color="#0c1220"/></linearGradient>
+  <linearGradient id="aa-top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2b2350"/><stop offset="0.45" stop-color="#14122a"/><stop offset="1" stop-color="#10233a"/></linearGradient>
+  <linearGradient id="aa-glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity=".04"/></linearGradient>
+  <linearGradient id="aa-btn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#c026d3"/></linearGradient>
+  <filter id="aa-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+  <filter id="aa-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+  <filter id="aa-gl2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+  <clipPath id="aa-face"><path d="M 0 -196 C 84 -196 134 -136 134 -54 C 134 22 124 76 98 114 C 72 150 38 168 0 168 C -38 168 -72 150 -98 114 C -124 76 -134 22 -134 -54 C -134 -136 -84 -196 0 -196 Z"/></clipPath>
+    <linearGradient id="aa-hand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a77c86"/><stop offset="1" stop-color="#6a5070"/></linearGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#aa-bg)"/>
+  <defs><radialGradient id="aa-au1"><stop offset="0" stop-color="#6d28d9" stop-opacity="0.75"/><stop offset=".55" stop-color="#6d28d9" stop-opacity="0.3375"/><stop offset="1" stop-color="#6d28d9" stop-opacity="0"/></radialGradient><radialGradient id="aa-au2"><stop offset="0" stop-color="#0891b2" stop-opacity="0.7"/><stop offset=".55" stop-color="#0891b2" stop-opacity="0.315"/><stop offset="1" stop-color="#0891b2" stop-opacity="0"/></radialGradient><radialGradient id="aa-au3"><stop offset="0" stop-color="#c026d3" stop-opacity="0.6"/><stop offset=".55" stop-color="#c026d3" stop-opacity="0.27"/><stop offset="1" stop-color="#c026d3" stop-opacity="0"/></radialGradient></defs>
+    <ellipse cx="200" cy="375" rx="550" ry="325" fill="url(#aa-au1)" transform="rotate(-24 200 375)"/>
+    <ellipse cx="850" cy="562.5" rx="500" ry="300" fill="url(#aa-au2)" transform="rotate(30 850 562.5)"/>
+    <ellipse cx="600" cy="150" rx="450" ry="175.00000000000003" fill="url(#aa-au3)"/>
+  <g stroke="#ffffff" stroke-opacity=".05" stroke-width="2"><path d="M 0 0 V 1250"/><path d="M 125 0 V 1250"/><path d="M 250 0 V 1250"/><path d="M 375 0 V 1250"/><path d="M 500 0 V 1250"/><path d="M 625 0 V 1250"/><path d="M 750 0 V 1250"/><path d="M 875 0 V 1250"/><path d="M 1000 0 V 1250"/><path d="M 0 0 H 1000"/><path d="M 0 125 H 1000"/><path d="M 0 250 H 1000"/><path d="M 0 375 H 1000"/><path d="M 0 500 H 1000"/><path d="M 0 625 H 1000"/><path d="M 0 750 H 1000"/><path d="M 0 875 H 1000"/><path d="M 0 1000 H 1000"/><path d="M 0 1125 H 1000"/><path d="M 0 1250 H 1000"/></g>
+  <g transform="translate(400 640) scale(1.12)">
+  <g>
+    <!-- leher -->
+    <path d="M -50 100 L -54 210 L 54 210 L 50 100 Z" fill="url(#aa-neck)"/>
+    <path d="M -50 120 Q 0 190 50 120 L 52 170 Q 0 220 -52 170 Z" fill="#2a1b2a" opacity=".45"/>
+    <g transform="scale(.86 1)">
+    <path d="M -60 206 C -148 228 -278 248 -338 300 C -402 356 -416 450 -426 820 L 426 820 C 416 450 402 356 338 300 C 278 248 148 228 60 206 Z" fill="url(#aa-top)"/>
+    <path d="M -338 300 C -402 356 -416 450 -426 820" stroke="#c084fc" stroke-width="10" fill="none" filter="url(#aa-glow)" opacity=".85"/>
+    <path d="M 338 300 C 402 356 416 450 426 820" stroke="#22d3ee" stroke-width="10" fill="none" filter="url(#aa-glow)" opacity=".75"/>
+    </g>
+    <!-- kerah turtleneck rendah -->
+    <path d="M -92 176 C -96 200 -100 226 -106 252 Q 0 290 106 252 C 100 226 96 200 92 176 Q 0 206 -92 176 Z" fill="url(#aa-top)"/>
+    <path d="M -92 176 Q 0 206 92 176" stroke="#ffffff" stroke-opacity=".12" stroke-width="4" fill="none"/>
+    <path d="M -100 216 Q 0 250 100 216" stroke="#ffffff" stroke-opacity=".06" stroke-width="4" fill="none"/>
+    <!-- sanggul tinggi -->
+    <circle cx="14" cy="-238" r="74" fill="url(#aa-hair)"/>
+    <path d="M -46 -282 C -6 -322 62 -312 82 -262" stroke="#c084fc" stroke-opacity=".6" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <!-- telinga -->
+    <ellipse cx="-132" cy="2" rx="21" ry="35" fill="#a77c86"/>
+    <ellipse cx="132" cy="2" rx="21" ry="35" fill="#5a4a66"/>
+    <path d="M -138 -14 Q -124 2 -136 22" stroke="#6a4650" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M 138 -14 Q 124 2 136 22" stroke="#33283f" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M 146 -26 C 156 -6 156 20 144 38" stroke="#67e8f9" stroke-opacity=".7" stroke-width="5" fill="none" filter="url(#aa-glow)"/>
+    <!-- wajah -->
+    <path d="M 0 -196 C 84 -196 134 -136 134 -54 C 134 22 124 76 98 114 C 72 150 38 168 0 168 C -38 168 -72 150 -98 114 C -124 76 -134 22 -134 -54 C -134 -136 -84 -196 0 -196 Z" fill="url(#aa-skin)"/>
+    <g clip-path="url(#aa-face)">
+      <path d="M -132 -40 C -130 30 -120 80 -96 116" fill="none" stroke="#e9d5ff" stroke-width="20" filter="url(#aa-glow)" opacity=".45"/>
+      <path d="M 132 -40 C 130 30 120 80 96 116" fill="none" stroke="#67e8f9" stroke-width="22" filter="url(#aa-glow)" opacity=".42"/>
+      <path d="M -150 -6 C -162 -150 -98 -224 0 -224 C 98 -224 162 -150 150 -6 C 146 -40 140 -70 130 -92 C 120 -120 92 -140 58 -146 C 30 -150 12 -158 0 -166 C -12 -158 -30 -150 -58 -146 C -92 -140 -120 -120 -130 -92 C -140 -70 -146 -40 -150 -6 Z" transform="translate(4 16)" fill="#2a1630" opacity=".35"/>
+      
+    </g>
+    <!-- rambut disisir ke belakang, belahan tengah -->
+    <path d="M -150 -6 C -162 -150 -98 -224 0 -224 C 98 -224 162 -150 150 -6 C 146 -40 140 -70 130 -92 C 120 -120 92 -140 58 -146 C 30 -150 12 -158 0 -166 C -12 -158 -30 -150 -58 -146 C -92 -140 -120 -120 -130 -92 C -140 -70 -146 -40 -150 -6 Z" fill="url(#aa-hair)"/>
+    <path d="M -132 -70 C -128 -140 -76 -190 -10 -198" stroke="#a78bfa" stroke-opacity=".55" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 132 -66 C 128 -134 84 -184 22 -198" stroke="#22d3ee" stroke-opacity=".45" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M -104 -126 C -148 -60 -140 10 -150 64" stroke="#120c18" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M -104 -126 C -148 -60 -140 10 -150 64" stroke="#c084fc" stroke-opacity=".35" stroke-width="3" fill="none" stroke-linecap="round" transform="translate(-5 0)"/>
+    <!-- anting manset telinga -->
+    <path d="M 140 18 q 9 12 0 26" stroke="#e2e8f0" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- fitur: kelopak setengah turun (tenang, fokus) -->
+    <path d="M -84 -48 C -66 -60 -44 -60 -30 -52" stroke="#140c14" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 30 -52 C 44 -60 66 -60 84 -48" stroke="#140c14" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M -80 -6 C -66 -24 -46 -24 -34 -8 C -46 6 -68 8 -80 -6 Z" fill="#140c14"/>
+    <path d="M 34 -8 C 46 -24 66 -24 80 -6 C 68 8 46 6 34 -8 Z" fill="#140c14"/>
+    <path d="M -86 -8 C -70 -28 -44 -28 -30 -10 M 30 -10 C 44 -28 70 -28 86 -8" stroke="#140c14" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="-50" cy="-12" r="4" fill="#e9d5ff"/><circle cx="62" cy="-12" r="4" fill="#a5f3fc"/>
+    <path d="M 2 0 C 8 20 16 36 14 50 C 10 58 0 58 -8 54" stroke="#4a2c2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M -4 10 C -2 26 2 38 4 46" stroke="#f5d0fe" stroke-opacity=".45" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M -32 86 C -18 86 -6 88 0 91 C 6 88 18 86 32 86 C 24 108 -24 108 -32 86 Z" fill="#8f4a5c"/>
+    <path d="M -32 86 C -12 98 12 98 32 86" stroke="#5a2a36" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g></g>
+  <!-- lengan terangkat + jari menyentuh panel kaca -->
+  <path d="M 700 1250 C 700 1080 690 920 716 810 L 800 820 C 790 930 800 1080 820 1250 Z" fill="url(#aa-top)"/>
+  <path d="M 800 820 C 790 930 800 1080 820 1250" stroke="#22d3ee" stroke-opacity=".6" stroke-width="8" fill="none" filter="url(#aa-glow)"/>
+  <g transform="translate(756 742) rotate(14)">
+    <rect x="-46" y="-40" width="92" height="96" rx="40" fill="url(#aa-hand)"/>
+    <rect x="-34" y="-128" width="30" height="104" rx="15" fill="url(#aa-hand)"/>
+    <rect x="-66" y="-14" width="30" height="62" rx="15" fill="#9c7280" transform="rotate(-30 -51 17)"/>
+    <path d="M 4 -30 q 20 -6 34 4 M 6 -6 q 20 -6 34 4" stroke="#4d3446" stroke-width="5" fill="none" stroke-linecap="round" opacity=".6"/>
+  </g>
+  <!-- panel kaca garis waktu gerak -->
+  <g>
+    <rect x="520" y="360" width="420" height="300" rx="30" fill="url(#aa-glass)" stroke="#ffffff" stroke-opacity=".22" stroke-width="3"/>
+    <rect x="556" y="398" width="150" height="12" rx="6" fill="#ffffff" fill-opacity=".45"/>
+    <rect x="556" y="424" width="96" height="10" rx="5" fill="#ffffff" fill-opacity=".2"/>
+    <g>
+    <circle cx="876" cy="418" r="34" fill="url(#aa-glass)" stroke="#ffffff" stroke-opacity=".22" stroke-width="3"/>
+    <rect x="867.16" y="407.12" width="5.78" height="21.76" rx="2.04" fill="#e0e7ff"/>
+    <rect x="879.06" y="407.12" width="5.78" height="21.76" rx="2.04" fill="#e0e7ff"/>
+  </g>
+    <rect x="556" y="478" width="348" height="8" rx="4" fill="#ffffff" fill-opacity=".1"/><rect x="556" y="530" width="348" height="8" rx="4" fill="#ffffff" fill-opacity=".1"/><rect x="556" y="582" width="348" height="8" rx="4" fill="#ffffff" fill-opacity=".1"/>
+    <rect x="589" y="471" width="22" height="22" rx="4" transform="rotate(45 600 482)" fill="#e9d5ff" stroke="#e9d5ff" stroke-opacity=".8" stroke-width="3"/><rect x="689" y="471" width="22" height="22" rx="4" transform="rotate(45 700 482)" fill="none" stroke="#e9d5ff" stroke-opacity=".8" stroke-width="3"/><rect x="809" y="471" width="22" height="22" rx="4" transform="rotate(45 820 482)" fill="#e9d5ff" stroke="#e9d5ff" stroke-opacity=".8" stroke-width="3"/><rect x="629" y="523" width="22" height="22" rx="4" transform="rotate(45 640 534)" fill="none" stroke="#e9d5ff" stroke-opacity=".8" stroke-width="3"/><rect x="749" y="523" width="22" height="22" rx="4" transform="rotate(45 760 534)" fill="#e9d5ff" stroke="#e9d5ff" stroke-opacity=".8" stroke-width="3"/><rect x="579" y="575" width="22" height="22" rx="4" transform="rotate(45 590 586)" fill="#e9d5ff" stroke="#e9d5ff" stroke-opacity=".8" stroke-width="3"/><rect x="869" y="575" width="22" height="22" rx="4" transform="rotate(45 880 586)" fill="none" stroke="#e9d5ff" stroke-opacity=".8" stroke-width="3"/>
+    <rect x="726" y="460" width="4" height="150" rx="2" fill="url(#aa-btn)"/>
+    <circle cx="728" cy="456" r="10" fill="#f5d0fe"/>
+    <circle cx="716" cy="626" r="26" fill="none" stroke="#a5f3fc" stroke-opacity=".7" stroke-width="3"/>
+    <circle cx="716" cy="626" r="44" fill="none" stroke="#a5f3fc" stroke-opacity=".3" stroke-width="2"/>
+  </g>
+</svg>
